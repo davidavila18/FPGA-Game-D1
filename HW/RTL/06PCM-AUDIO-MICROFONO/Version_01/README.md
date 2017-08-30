@@ -32,7 +32,7 @@ Finalmente este modulo tiene 3 salidas:
 * **do** datos de salida hacia el altavos (conformado por 16 bits)
 
 <a href="https://ibb.co/fsxH2Q"><img src="https://preview.ibb.co/gXGo95/fpga.jpg" alt="fpga" border="0"></a>
-# Descripción funcional (Modulo Microfono MEMS):
+### Descripción funcional (Modulo Microfono MEMS):
 
 ## Descripción Estructural:
 
