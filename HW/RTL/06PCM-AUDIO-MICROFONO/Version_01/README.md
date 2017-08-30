@@ -31,9 +31,11 @@ Finalmente este modulo tiene 3 salidas:
 El modulo de microfono tiene como entradas **clkout** (1 bit) que es una de las salidas del modulo fpga y se usa para realizar todo el poceso de digitalizacion, esta tambien el **enable** (1 bit) para iniciar el modulo  y esta un **select** (1 bit) que se aplicara mas adelante para el seriado de dos microfonos.
 
 Como salidas cuenta con **di** que es la informacion del microfono y consta de 18 bits, la interfaz de comunicacion de este modulo y el FPGA es I2S.
+
 <a href="https://imgbb.com/"><img src="https://image.ibb.co/bxV9Gk/microfono.jpg" alt="microfono" border="0"></a>
 ### Descripción de la caja funcional (Modulo Altavoz):
-El modulo de altavoz tiene como entradas **clkout** (1 bit) es una de las salidas del modulo fpga y se usa para la serializacion de los datos para pasarlos a una señal analoga y cuenta con un **fo** (16 bit) son los datos enviados por la fpga. Como salida cuenta con el parlante (actuador)
+El modulo de altavoz tiene como entradas **clkout** (1 bit) es una de las salidas del modulo fpga y se usa para la serializacion de los datos para pasarlos a una señal analoga y cuenta con un **fo** (16 bit) son los datos enviados por la fpga. Como salida cuenta con el parlante (actuador).
+
 <a href="https://imgbb.com/"><img src="https://image.ibb.co/dBNZhQ/altavoz.jpg" alt="altavoz" border="0"></a>
 ## Descripción Estructural:
 
