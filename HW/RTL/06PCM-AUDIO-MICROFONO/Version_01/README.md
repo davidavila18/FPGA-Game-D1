@@ -17,7 +17,7 @@ En este modulo se tienen inicialmente dos submodulos: divisor de frecuencia y re
 
 El modulo de la FPGA ademas de los submodulos tiene 4 entradas: 
 * **di** datos provenientes del microfono (conformado por 18 bits) 
-* **INT** para inicializar (conformado por 1 bit)
+* **int** para inicializar (conformado por 1 bit)
 * **W/R** para indicar si va a repoducir o grabar (conformado por 1 bit)
 * **done** para indicar que finalizo la accion (conformado por 1 bit)
 
