@@ -1,3 +1,2 @@
 # Diagrama estructural divisor de Frecuencia <h1>
-![texto cualquiera por si no carga la imagen][url=https://imgbb.com/][img]https://image.ibb.co/goh6wk/Div_freq.jpg[/img][/url]
-
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/goh6wk/Div_freq.jpg" alt="Div_freq" border="0"></a>
