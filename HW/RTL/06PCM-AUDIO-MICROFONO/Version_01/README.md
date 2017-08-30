@@ -38,7 +38,8 @@ El modulo de altavoz tiene como entradas **clkout** (1 bit) es una de las salida
 
 <a href="https://imgbb.com/"><img src="https://image.ibb.co/dBNZhQ/altavoz.jpg" alt="altavoz" border="0"></a>
 ## Descripción Estructural:
-
+### Descripción Estructural (Divisor de frecuencia):
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/k59ap5/Selecci_n_038.png" alt="Selecci_n_038" border="0"></a>
 
 ## Diagrama de Estados:
 
