@@ -1,2 +1,2 @@
-# Este es una etiqueta <h1>
+# Diagrama estructural divisor de Frecuencia <h1>
 
