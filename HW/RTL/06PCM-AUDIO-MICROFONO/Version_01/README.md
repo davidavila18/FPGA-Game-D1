@@ -9,15 +9,10 @@
 ### 3 Nombre1 nombre2 apelido1 apellido2 correo@electronico
 
 
-## Descripción general del sistema: (tomado del documento de clase)
-
+## Descripción general del sistema: 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-## Descripción de la caja Funcional  (in/out)
-
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-## Descripción funcional (Modulo Fpga):
+## Descripción de la caja funcional (Modulo Fpga):
 En este modulo se tienen inicialmente dos submodulos: divisor de frecuencia y registros. El divisor de frecuencia es necesario para obtener los clocks de sincranizacion de el modulo de microfono y de altavoz, para esto se necesita un clock de entrada CLK, un clock de salida CLKOUT y un RESET de entrada para reiniciar el ciclo, adicionalmente se tienen dos parametros fijos la Fi que es la frecuencia del reloj de la Nexys 2 50MHZ y el Fo que es la Frecuencia de salida que se quiere. 
 
 El modulo de la FPGA ademas de los submodulos tiene 4 entradas: 
@@ -32,8 +27,14 @@ Finalmente este modulo tiene 3 salidas:
 * **do** datos de salida hacia el altavos (conformado por 16 bits)
 
 <a href="https://ibb.co/fsxH2Q"><img src="https://preview.ibb.co/gXGo95/fpga.jpg" alt="fpga" border="0"></a>
-### Descripción funcional (Modulo Microfono MEMS):
+### Descripción de la caja funcional (Modulo Microfono MEMS):
+El modulo de microfono tiene como entradas **clkout** (1 bit) que es una de las salidas del modulo fpga y se usa para realizar todo el poceso de digitalizacion, esta tambien el **enable** (1 bit) para iniciar el modulo  y esta un **select** (1 bit) que se aplicara mas adelante para el seriado de dos microfonos.
 
+Como salidas cuenta con **di** que es la informacion del microfono y consta de 18 bits, la interfaz de comunicacion de este modulo y el FPGA es I2S.
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/bxV9Gk/microfono.jpg" alt="microfono" border="0"></a>
+### Descripción de la caja funcional (Modulo Altavoz):
+El modulo de altavoz tiene como entradas **clkout** (1 bit) es una de las salidas del modulo fpga y se usa para la serializacion de los datos para pasarlos a una señal analoga y cuenta con un **fo** (16 bit) son los datos enviados por la fpga. Como salida cuenta con el parlante (actuador)
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/dBNZhQ/altavoz.jpg" alt="altavoz" border="0"></a>
 ## Descripción Estructural:
 
 
